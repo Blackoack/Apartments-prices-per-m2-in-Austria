@@ -1970,23 +1970,5 @@ if __name__ == "__main__":
     app.run_server(debug=True)
 
 
-# In[22]:
-
-
-sale_df = df[df["type"] == "rent"]
-gg = sale_df.groupby(["location", "type"]).agg({"price per m2": "mean"})
-
-
-# In[23]:
-
-
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-gg.round(2)
-
-
-# In[ ]:
-
-
 
 
