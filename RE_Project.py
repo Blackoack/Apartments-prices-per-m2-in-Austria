@@ -1931,6 +1931,7 @@ vienna_map_rent.save("vienna_map_rent.html")
 # Dashboard
 
 app = dash.Dash(__name__)
+server = app.server
 
 image_options = {
     "Austria (regions) - Sale": "austria_map_sale.html",
